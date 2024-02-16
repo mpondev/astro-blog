@@ -1,12 +1,13 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../images/logo.png';
+---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js"
       integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
@@ -14,12 +15,19 @@
       referrerpolicy="no-referrer"></script>
     <title>Tech People Blog</title>
   </head>
+
   <body class="">
     <nav class="bg-gray-900 text-white">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="images/logo.png" class="h-14" alt="TechPeople Logo" />
+          <Image
+            src={logo}
+            class="h-14"
+            alt="TechPeople Logo"
+            height={55}
+            width={55}
+          />
           <span class="self-center text-2xl font-semibold whitespace-nowrap"
             ><span class="text-indigo-400">Tech</span>People</span
           >
@@ -119,7 +127,7 @@
           class="relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl">
           <a href="article.html">
             <img
-              src="images/image1.png"
+              src="/images/image1.png"
               alt="Article Image"
               class="w-full h-auto rounded-2xl"
             />
@@ -156,7 +164,7 @@
           <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image2.png"
+                src="/images/image2.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -187,7 +195,7 @@
           <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image3.png"
+                src="/images/image3.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -218,7 +226,7 @@
           <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image4.png"
+                src="/images/image4.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -249,7 +257,7 @@
           <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image5.png"
+                src="/images/image5.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -280,7 +288,7 @@
           <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image6.png"
+                src="/images/image6.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -311,7 +319,7 @@
           <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image7.png"
+                src="/images/image7.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -401,5 +409,6 @@
           </div>
         </div>
       </div>
-    </footer></body>
+    </footer></body
+  >
 </html>
